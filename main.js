@@ -8,7 +8,7 @@ module.exports = function(app, key, callbackSuccess, callbackFail, options) {
 
   app.post(options.endpoint, function validateReCaptcha(req, res) {
     let url = 'https://www.google.com/recaptcha/api/siteverify?secret=' + key + '&response=' + req.body;
-    let ip = options.usingProxy ? request.headers['x-forwarded-for'] : request.connection.remoteAddress;
+    let ip = options.usingProxy ? req.headers['x-forwarded-for'] : req.connection.remoteAddress;
     if (options.sendIp) {
       url += '&remoteip=' + ip;
     }

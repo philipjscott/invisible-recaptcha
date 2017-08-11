@@ -1,6 +1,6 @@
 {
   "name": "invisible-recaptcha",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js wrapper for Google's invisible reCaptcha",
   "main": "main.js",
   "scripts": {
