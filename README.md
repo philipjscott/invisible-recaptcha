@@ -41,6 +41,7 @@ More in-depth examples to come soon.
 * `options.endpoint` - String. Specifies the `POST` endpoint for receiving the Google token from client-side. Defaults to `'/recaptcha'`
 * `options.sendIp` - Boolean. The Google's reCaptcha API doesn't require the client's IP address; it's optional. Defaults to `true`.
 * `options.usingProxy` - Boolean. If `options.sendIp` is `true`, then you must specify whether you're using a reverse proxy. Defaults to `false`.
+* `options.theme` - String. Specifies the reCaptcha theme. Your choices are `'dark'` and `'light'`. Defaults to `'light'`.
 
 ## Disclaimer
 The creator, nor the project is in no way associated with Google. Also, this is my first public NPM package, so please be gentle ;)
