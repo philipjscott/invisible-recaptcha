@@ -4,7 +4,7 @@ const request = require('request');
 function recaptchaRouter(key, callbackSuccess, callbackFail, options) {
   let router = express.Router();
 
-  options = || {};
+  options = options || {};
   options.sendIp = options.sendIp || true;
   options.usingProxy = options.usingProxy || false;
   options.theme = options.theme || 'light';
