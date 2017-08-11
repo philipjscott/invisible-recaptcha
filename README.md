@@ -10,9 +10,12 @@ npm install --save invisible-recaptcha
 Requires an express instance, along with your secret reCaptcha key provided by Google. Please note that this wrapper does not configure the `body-parser` middleware, so you must do that yourself. This wrapper sets up a `POST` endpoint, specified by `options.endpoint` (by default it's `'/recaptcha'`). Note that you're responsible for getting the client-side data and `POST`ing it to the endpoint.
 
 #### Parameters
+## Wrapper
 ```js
 recaptcha(expressApp, secretKey, callbackSuccess, callbackFail, options)
 ```
+## Callbacks
+The request and response of the `POST` is passed to both callbacks, eg `callbackSuccess(req, res)`.
 
 #### Examples
 ```js
@@ -22,8 +25,8 @@ const bodyParser = require('body-parser');
 const SECRET_KEY = "SECRET";
 const app = express();
 
-function captchaSuccess() { console.log('reCaptcha success!') }
-function captchaFail() { console.log('reCaptcha failed.') }
+function captchaSuccess(req, res) { res.send('reCaptcha success!') }
+function captchaFail(req, res) { res.send('reCaptcha failed.') }
 
 app.use(bodyParser.urlencoded({ extended });
 recaptcha(app, SECRET_KEY, captchaSuccess, captchaFail);

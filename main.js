@@ -14,9 +14,9 @@ module.exports = function(app, key, callbackSuccess, callbackFail, options) {
     }
     request.get(url, function handleGoogleReply(err, googleRes, body) {
       if (JSON.parse(body).success) {
-        callbackSuccess();
+        callbackSuccess(req, res);
       } else {
-        callbackFail();
+        callbackFail(req, res);
       }
     });
   });
