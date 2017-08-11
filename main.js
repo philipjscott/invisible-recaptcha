@@ -1,5 +1,4 @@
 const request = require('request');
-const bodyParser = require('body-parser');
 
 module.exports = function(app, key, callbackSuccess, callbackFail, options) {
   options = options || {};
