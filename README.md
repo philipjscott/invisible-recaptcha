@@ -36,7 +36,7 @@ More in-depth examples to come soon.
 * `options.sendIp` - Boolean. The Google's reCaptcha API doesn't require the client's IP address; it's optional. Defaults to `true`.
 * `options.usingProxy` - Boolean. If `options.sendIp` is `true`, then you must specify whether you're using a reverse proxy. Defaults to `false`.
 
-#### Disclaimer
+## Disclaimer
 The creator, nor the project is in no way associated with Google. Also, this is my first public NPM package, so please be gentle ;)
 
 If you have any criticisms, questions, requests, or simply want to talk, you can email me at pscott@zeptohost.com
