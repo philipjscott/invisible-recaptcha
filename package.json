@@ -1,6 +1,6 @@
 {
   "name": "invisible-recaptcha",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Express wrapper for Google's invisible reCaptcha",
   "main": "main.js",
   "scripts": {
