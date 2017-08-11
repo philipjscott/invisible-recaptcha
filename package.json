@@ -1,5 +1,5 @@
 {
-  "name": "invisible-captcha",
+  "name": "invisible-recaptcha",
   "version": "1.0.0",
   "description": "Node.js wrapper for Google's invisible reCaptcha",
   "main": "main.js",
