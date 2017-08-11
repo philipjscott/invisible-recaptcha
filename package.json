@@ -1,7 +1,7 @@
 {
   "name": "invisible-recaptcha",
   "version": "1.0.4",
-  "description": "Node.js wrapper for Google's invisible reCaptcha",
+  "description": "Express wrapper for Google's invisible reCaptcha",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,10 +16,11 @@
   "author": "Philip Scott",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ScottyFillups/invisibleRecaptcha.git"
+    "url": "https://github.com/ScottyFillups/invisible-recaptcha.git"
   },
   "license": "MIT",
   "dependencies": {
+    "express": "^4.15.4",
     "request": "^2.81.0"
   }
 }
