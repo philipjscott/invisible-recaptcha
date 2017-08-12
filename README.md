@@ -30,7 +30,7 @@ const bodyParser = require('body-parser');
 const SECRET_KEY = "SECRET";
 const app = express();
 
-const recaptchaRouter = recaptchaRouterFactory(SECRET_KEY, captchaSuccess, captchaFail, {theme: 'dark'});
+const recaptchaRouter = recaptchaRouterFactory(SECRET_KEY, captchaSuccess, captchaFail);
 
 function captchaSuccess(req, res) { res.send('reCaptcha success!') }
 function captchaFail(req, res) { res.send('reCaptcha failed.') }
@@ -44,7 +44,6 @@ More in-depth examples to come soon.
 #### Options
 * `options.sendIp` - Boolean. The Google's reCaptcha API doesn't require the client's IP address; it's optional. Defaults to `true`.
 * `options.usingProxy` - Boolean. If `options.sendIp` is `true`, then you must specify whether you're using a reverse proxy. Defaults to `false`.
-* `options.theme` - String. Specifies the reCaptcha theme. Your choices are `'dark'` and `'light'`. Defaults to `'light'`.
 
 ## Disclaimer
 The creator, nor the project are in any way associated with Google. Also, this is my first public NPM package, so please be gentle ;)
